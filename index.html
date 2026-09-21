@@ -1,0 +1,7723 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+
+<meta
+  name="description"
+  content="GhViƆɔ — A Kenyan creative and cultural platform connecting fashion, art, sound, sport, community and ideas through experiences, collaborations and creative projects."
+>
+
+
+<meta
+  name="theme-color"
+  content="#080908"
+>
+
+
+<title>GhViƆɔ — Culture • Art • Sound • Fashion • Community</title>
+
+
+
+
+<!-- =========================================================
+     FONTS
+========================================================= -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
+
+
+
+
+<style>
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+
+:root{
+
+
+  --bg:#070807;
+
+
+  --surface:#0e100e;
+
+
+  --surface-2:#151915;
+
+
+  --surface-3:#1c211c;
+
+
+  --text:#f3f0e7;
+
+
+  --muted:#a5aca5;
+
+
+  --accent:#c7a76c;
+
+
+  --accent-light:#dbc28b;
+
+
+  --green:#718b74;
+
+
+  --green-dark:#3d5b43;
+
+
+  --line:rgba(255,255,255,.085);
+
+
+  --line-strong:rgba(255,255,255,.16);
+
+
+  --glass:rgba(255,255,255,.035);
+
+
+  --shadow:
+    0 30px 90px rgba(0,0,0,.32);
+
+
+}
+
+
+
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+
+.light{
+
+
+  --bg:#f3f0e8;
+
+
+  --surface:#ffffff;
+
+
+  --surface-2:#e9e6dd;
+
+
+  --surface-3:#dedcd2;
+
+
+  --text:#111511;
+
+
+  --muted:#626961;
+
+
+  --accent:#927343;
+
+
+  --accent-light:#a78954;
+
+
+  --green:#58745d;
+
+
+  --green-dark:#405e47;
+
+
+  --line:rgba(0,0,0,.09);
+
+
+  --line-strong:rgba(0,0,0,.16);
+
+
+  --glass:rgba(0,0,0,.025);
+
+
+  --shadow:
+    0 30px 80px rgba(30,35,30,.12);
+
+
+}
+
+
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+
+*{
+
+
+  margin:0;
+
+
+  padding:0;
+
+
+  box-sizing:border-box;
+
+
+}
+
+
+
+
+html{
+
+
+  scroll-behavior:smooth;
+
+
+}
+
+
+
+
+body{
+
+
+  background:var(--bg);
+
+
+  color:var(--text);
+
+
+  font-family:'Inter',sans-serif;
+
+
+  overflow-x:hidden;
+
+
+  transition:
+    background .45s ease,
+    color .45s ease;
+
+
+}
+
+
+
+
+img{
+
+
+  max-width:100%;
+
+
+}
+
+
+
+
+a{
+
+
+  color:inherit;
+
+
+}
+
+
+
+
+/* =========================================================
+   GLOBAL SECTION
+========================================================= */
+
+
+.section{
+
+
+  width:100%;
+
+
+  max-width:1200px;
+
+
+  margin:auto;
+
+
+  padding:150px 30px;
+
+
+}
+
+
+
+
+.eyebrow{
+
+
+  color:var(--accent);
+
+
+  font-size:10px;
+
+
+  font-weight:500;
+
+
+  letter-spacing:.3em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+.section-title{
+
+
+  margin:
+    25px 0 50px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(3rem,6vw,5.5rem);
+
+
+  font-weight:500;
+
+
+  line-height:.98;
+
+
+  letter-spacing:-3px;
+
+
+}
+
+
+
+
+.section-title::before{
+
+
+  content:"";
+
+
+  display:block;
+
+
+  width:55px;
+
+
+  height:1px;
+
+
+  background:var(--accent);
+
+
+  margin-bottom:24px;
+
+
+}
+
+
+
+
+.text{
+
+
+  max-width:820px;
+
+
+  color:var(--muted);
+
+
+  font-size:1rem;
+
+
+  line-height:2;
+
+
+}
+
+
+
+
+.text p{
+
+
+  margin-bottom:24px;
+
+
+}
+
+
+
+
+/* =========================================================
+   THEME
+========================================================= */
+
+
+.theme{
+
+
+  position:fixed;
+
+
+  top:20px;
+
+
+  right:20px;
+
+
+  z-index:3000;
+
+
+  padding:11px 16px;
+
+
+  border:
+    1px solid
+    rgba(255,255,255,.15);
+
+
+  border-radius:13px;
+
+
+  background:
+    rgba(0,0,0,.3);
+
+
+  backdrop-filter:blur(18px);
+
+
+  color:#fff;
+
+
+  cursor:pointer;
+
+
+  font-size:9px;
+
+
+  letter-spacing:.16em;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.theme:hover{
+
+
+  color:var(--accent-light);
+
+
+  border-color:var(--accent);
+
+
+}
+
+
+
+
+.light .theme{
+
+
+  background:
+    rgba(255,255,255,.7);
+
+
+  color:var(--text);
+
+
+  border-color:var(--line);
+
+
+}
+
+
+
+
+/* =========================================================
+   SIDE NAVIGATION
+========================================================= */
+
+
+.side-nav{
+
+
+  position:fixed;
+
+
+  left:28px;
+
+
+  top:50%;
+
+
+  transform:translateY(-50%);
+
+
+  z-index:1000;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  gap:17px;
+
+
+}
+
+
+
+
+.side-nav a{
+
+
+  position:relative;
+
+
+  width:7px;
+
+
+  height:7px;
+
+
+  display:block;
+
+
+  border-radius:50%;
+
+
+  background:var(--muted);
+
+
+  opacity:.35;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.side-nav a:hover{
+
+
+  opacity:1;
+
+
+  background:var(--accent);
+
+
+  transform:scale(1.7);
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+  .side-nav{
+
+
+    display:none;
+
+
+  }
+
+
+}
+
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+
+.hero{
+
+
+  min-height:100vh;
+
+
+  position:relative;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  overflow:hidden;
+
+
+  padding:
+    110px 25px;
+
+
+  text-align:center;
+
+
+  background:
+
+
+    linear-gradient(
+      rgba(4,7,5,.48),
+      rgba(3,6,4,.92)
+    ),
+
+
+    url("https://images..com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2400&q=90")
+
+
+    center/cover no-repeat;
+
+
+}
+
+
+
+
+.light .hero{
+
+
+  background:
+
+
+    linear-gradient(
+      rgba(243,240,232,.45),
+      rgba(243,240,232,.9)
+    ),
+
+
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2400&q=90")
+
+
+    center/cover no-repeat;
+
+
+}
+
+
+
+
+.hero::before{
+
+
+  content:"GhViƆɔ";
+
+
+  position:absolute;
+
+
+  left:50%;
+
+
+  top:50%;
+
+
+  transform:
+    translate(-50%,-50%);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(8rem,25vw,25rem);
+
+
+  line-height:1;
+
+
+  letter-spacing:-.09em;
+
+
+  color:rgba(255,255,255,.025);
+
+
+  white-space:nowrap;
+
+
+  pointer-events:none;
+
+
+}
+
+
+
+
+.hero::after{
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  background:
+
+
+    radial-gradient(
+      circle at center,
+      transparent 10%,
+      rgba(0,0,0,.52)
+    );
+
+
+  pointer-events:none;
+
+
+}
+
+
+
+
+.light .hero::after{
+
+
+  background:
+
+
+    radial-gradient(
+      circle at center,
+      transparent 10%,
+      rgba(255,255,255,.12)
+    );
+
+
+}
+
+
+
+
+.hero-inner{
+
+
+  position:relative;
+
+
+  z-index:2;
+
+
+  max-width:1100px;
+
+
+}
+
+
+
+
+.hero .eyebrow{
+
+
+  margin-bottom:30px;
+
+
+}
+
+
+
+
+.hero h1{
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(5rem,13vw,12rem);
+
+
+  font-weight:500;
+
+
+  line-height:.76;
+
+
+  letter-spacing:-8px;
+
+
+}
+
+
+
+
+.hero h1 span{
+
+
+  color:var(--accent);
+
+
+}
+
+
+
+
+.hero-subtitle{
+
+
+  max-width:760px;
+
+
+  margin:
+    48px auto 0;
+
+
+  color:#d7ddd7;
+
+
+  font-size:1.08rem;
+
+
+  line-height:1.95;
+
+
+}
+
+
+
+
+.light .hero-subtitle{
+
+
+  color:#343b35;
+
+
+}
+
+
+
+
+.hero-location{
+
+
+  margin-top:28px;
+
+
+  color:var(--accent-light);
+
+
+  font-size:9px;
+
+
+  letter-spacing:.27em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+
+.actions{
+
+
+  display:flex;
+
+
+  justify-content:center;
+
+
+  align-items:center;
+
+
+  flex-wrap:wrap;
+
+
+  gap:14px;
+
+
+  margin-top:45px;
+
+
+}
+
+
+
+
+.btn{
+
+
+  display:inline-flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  min-height:50px;
+
+
+  padding:
+    14px 25px;
+
+
+  border-radius:13px;
+
+
+  text-decoration:none;
+
+
+  font-size:.84rem;
+
+
+  transition:.35s ease;
+
+
+}
+
+
+
+
+.primary{
+
+
+  background:var(--accent);
+
+
+  color:#111;
+
+
+}
+
+
+
+
+.primary:hover{
+
+
+  transform:translateY(-4px);
+
+
+  box-shadow:
+    0 15px 35px
+    rgba(197,166,107,.22);
+
+
+}
+
+
+
+
+.secondary{
+
+
+  border:
+    1px solid
+    var(--line-strong);
+
+
+  background:
+    rgba(255,255,255,.025);
+
+
+  color:var(--text);
+
+
+}
+
+
+
+
+.secondary:hover{
+
+
+  border-color:var(--accent);
+
+
+  color:var(--accent);
+
+
+  transform:translateY(-3px);
+
+
+}
+
+
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+
+.intro-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    minmax(350px,.85fr)
+    minmax(430px,1.15fr);
+
+
+  gap:95px;
+
+
+  align-items:center;
+
+
+}
+
+
+
+
+.intro-image{
+
+
+  position:relative;
+
+
+  min-height:680px;
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:28px;
+
+
+  background:var(--surface);
+
+
+  box-shadow:var(--shadow);
+
+
+}
+
+
+
+
+.intro-image img{
+
+
+  width:100%;
+
+
+  height:100%;
+
+
+  min-height:680px;
+
+
+  object-fit:cover;
+
+
+  display:block;
+
+
+  transition:
+    transform 1s ease;
+
+
+}
+
+
+
+
+.intro-image:hover img{
+
+
+  transform:scale(1.035);
+
+
+}
+
+
+
+
+.intro-image::after{
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0,0,0,.72),
+      transparent 45%
+    );
+
+
+  pointer-events:none;
+
+
+}
+
+
+
+
+.image-caption{
+
+
+  position:absolute;
+
+
+  z-index:2;
+
+
+  left:28px;
+
+
+  right:28px;
+
+
+  bottom:25px;
+
+
+  display:flex;
+
+
+  justify-content:space-between;
+
+
+  gap:20px;
+
+
+  color:#fff;
+
+
+  font-size:9px;
+
+
+  letter-spacing:.17em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+.image-caption span:last-child{
+
+
+  color:rgba(255,255,255,.6);
+
+
+}
+
+
+
+
+.intro-heading{
+
+
+  margin-top:30px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(2.8rem,5vw,4.8rem);
+
+
+  font-weight:500;
+
+
+  line-height:1.08;
+
+
+  letter-spacing:-2px;
+
+
+}
+
+
+
+
+.intro-heading span{
+
+
+  display:block;
+
+
+  margin-top:25px;
+
+
+  color:var(--accent);
+
+
+}
+
+
+
+
+.gold-line{
+
+
+  width:55px;
+
+
+  height:1px;
+
+
+  margin:40px 0;
+
+
+  background:var(--accent);
+
+
+}
+
+
+
+
+/* =========================================================
+   PROOF / ACTIVITY
+========================================================= */
+
+
+.activity-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+
+  gap:15px;
+
+
+  margin-top:65px;
+
+
+}
+
+
+
+
+.activity-card{
+
+
+  min-height:230px;
+
+
+  padding:30px;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  justify-content:space-between;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:23px;
+
+
+  background:var(--glass);
+
+
+  transition:.4s ease;
+
+
+}
+
+
+
+
+.activity-card:hover{
+
+
+  transform:translateY(-7px);
+
+
+  border-color:var(--accent);
+
+
+  background:var(--surface-2);
+
+
+}
+
+
+
+
+.activity-number{
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:2.2rem;
+
+
+}
+
+
+
+
+.activity-card h3{
+
+
+  margin:
+    18px 0 10px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.5rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.activity-card p{
+
+
+  color:var(--muted);
+
+
+  font-size:.84rem;
+
+
+  line-height:1.8;
+
+
+}
+
+
+
+
+/* =========================================================
+   IDENTITY
+========================================================= */
+
+
+.duality{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    1fr 1fr;
+
+
+  gap:22px;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.duality-card{
+
+
+  min-height:430px;
+
+
+  padding:45px;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  justify-content:flex-end;
+
+
+  position:relative;
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:27px;
+
+
+  background:var(--surface);
+
+
+}
+
+
+
+
+.duality-card::before{
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  background:
+    linear-gradient(
+      transparent 20%,
+      rgba(0,0,0,.88)
+    );
+
+
+  z-index:1;
+
+
+}
+
+
+
+
+.duality-card img{
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  width:100%;
+
+
+  height:100%;
+
+
+  object-fit:cover;
+
+
+  transition:.9s ease;
+
+
+}
+
+
+
+
+.duality-card:hover img{
+
+
+  transform:scale(1.05);
+
+
+}
+
+
+
+
+.duality-content{
+
+
+  position:relative;
+
+
+  z-index:2;
+
+
+}
+
+
+
+
+.duality-number{
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.1rem;
+
+
+}
+
+
+
+
+.duality h3{
+
+
+  margin:
+    15px 0;
+
+
+  color:#fff;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:2.5rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.duality p{
+
+
+  color:
+    rgba(255,255,255,.72);
+
+
+  max-width:550px;
+
+
+  line-height:1.8;
+
+
+}
+
+
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+
+.value-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+
+  gap:20px;
+
+
+  margin-top:65px;
+
+
+}
+
+
+
+
+.value-card{
+
+
+  min-height:300px;
+
+
+  padding:34px;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  justify-content:space-between;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:25px;
+
+
+  background:var(--glass);
+
+
+  transition:.4s ease;
+
+
+}
+
+
+
+
+.value-card:hover{
+
+
+  transform:translateY(-8px);
+
+
+  border-color:
+    rgba(197,166,107,.45);
+
+
+  background:var(--surface);
+
+
+}
+
+
+
+
+.value-number{
+
+
+  font-family:'Playfair Display',serif;
+
+
+  color:var(--accent);
+
+
+  font-size:3.8rem;
+
+
+  line-height:1;
+
+
+}
+
+
+
+
+.value-card h3{
+
+
+  margin-bottom:13px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.65rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.value-card p{
+
+
+  color:var(--muted);
+
+
+  font-size:.9rem;
+
+
+  line-height:1.85;
+
+
+}
+
+
+
+
+/* =========================================================
+   WORLD
+========================================================= */
+
+
+.world-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+
+  gap:15px;
+
+
+  margin-top:65px;
+
+
+}
+
+
+
+
+.world-item{
+
+
+  min-height:250px;
+
+
+  padding:28px;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  justify-content:space-between;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:23px;
+
+
+  background:var(--glass);
+
+
+  transition:.4s ease;
+
+
+}
+
+
+
+
+.world-item:hover{
+
+
+  transform:translateY(-7px);
+
+
+  border-color:var(--accent);
+
+
+  background:var(--surface-2);
+
+
+}
+
+
+
+
+.world-index{
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:2rem;
+
+
+}
+
+
+
+
+.world-item h3{
+
+
+  margin-bottom:10px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.65rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.world-item p{
+
+
+  color:var(--muted);
+
+
+  font-size:.83rem;
+
+
+  line-height:1.75;
+
+
+}
+
+
+
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+
+.feature{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    1.12fr 1fr;
+
+
+  gap:70px;
+
+
+  align-items:center;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.feature.reverse{
+
+
+  grid-template-columns:
+    1fr 1.12fr;
+
+
+}
+
+
+
+
+.feature-image{
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:27px;
+
+
+  background:var(--surface);
+
+
+}
+
+
+
+
+.feature-image img{
+
+
+  width:100%;
+
+
+  aspect-ratio:4/3;
+
+
+  display:block;
+
+
+  object-fit:cover;
+
+
+  transition:
+    transform .9s ease;
+
+
+}
+
+
+
+
+.feature-image:hover img{
+
+
+  transform:scale(1.045);
+
+
+}
+
+
+
+
+.feature-content{
+
+
+  padding:10px 0;
+
+
+}
+
+
+
+
+.feature-content h3{
+
+
+  margin:
+    18px 0 26px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(2.5rem,4.5vw,4rem);
+
+
+  font-weight:500;
+
+
+  line-height:1.08;
+
+
+  letter-spacing:-1.5px;
+
+
+}
+
+
+
+
+.feature-content p{
+
+
+  margin-bottom:21px;
+
+
+  color:var(--muted);
+
+
+  line-height:1.95;
+
+
+}
+
+
+
+
+/* =========================================================
+   SOUND
+========================================================= */
+
+
+.sound-section{
+
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(95,124,99,.055)
+    );
+
+
+}
+
+
+
+
+.sound-layout{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+
+  gap:90px;
+
+
+  align-items:start;
+
+
+}
+
+
+
+
+.sound-intro{
+
+
+  position:sticky;
+
+
+  top:120px;
+
+
+}
+
+
+
+
+.sound-list{
+
+
+  border-top:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.sound-item{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    70px 1fr;
+
+
+  gap:25px;
+
+
+  padding:
+    30px 0;
+
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.sound-number{
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.3rem;
+
+
+}
+
+
+
+
+.sound-item h3{
+
+
+  margin-bottom:10px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.8rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.sound-item p{
+
+
+  color:var(--muted);
+
+
+  line-height:1.8;
+
+
+  font-size:.9rem;
+
+
+}
+
+
+
+
+/* =========================================================
+   COMMUNITY / SPORT
+========================================================= */
+
+
+.community-feature{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    1fr 1fr;
+
+
+  gap:22px;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.community-card{
+
+
+  position:relative;
+
+
+  min-height:500px;
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:27px;
+
+
+}
+
+
+
+
+.community-card img{
+
+
+  width:100%;
+
+
+  height:100%;
+
+
+  min-height:500px;
+
+
+  object-fit:cover;
+
+
+  display:block;
+
+
+  transition:.9s ease;
+
+
+}
+
+
+
+
+.community-card:hover img{
+
+
+  transform:scale(1.04);
+
+
+}
+
+
+
+
+.community-overlay{
+
+
+  position:absolute;
+
+
+  inset:0;
+
+
+  padding:35px;
+
+
+  display:flex;
+
+
+  flex-direction:column;
+
+
+  justify-content:flex-end;
+
+
+  background:
+    linear-gradient(
+      transparent 20%,
+      rgba(0,0,0,.88)
+    );
+
+
+}
+
+
+
+
+.community-tag{
+
+
+  margin-bottom:13px;
+
+
+  color:var(--accent-light);
+
+
+  font-size:9px;
+
+
+  letter-spacing:.2em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+.community-overlay h3{
+
+
+  margin-bottom:12px;
+
+
+  color:#fff;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:2.4rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.community-overlay p{
+
+
+  color:
+    rgba(255,255,255,.72);
+
+
+  max-width:560px;
+
+
+  font-size:.88rem;
+
+
+  line-height:1.75;
+
+
+}
+
+
+
+
+/* =========================================================
+   IMPACT / ROTARACT
+========================================================= */
+
+
+.impact{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    .95fr 1.05fr;
+
+
+  gap:75px;
+
+
+  align-items:center;
+
+
+}
+
+
+
+
+.impact-image{
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:28px;
+
+
+  background:var(--surface);
+
+
+}
+
+
+
+
+.impact-image img{
+
+
+  width:100%;
+
+
+  aspect-ratio:4/5;
+
+
+  display:block;
+
+
+  object-fit:cover;
+
+
+  transition:1s ease;
+
+
+}
+
+
+
+
+.impact-image:hover img{
+
+
+  transform:scale(1.04);
+
+
+}
+
+
+
+
+.impact-content h3{
+
+
+  margin:
+    20px 0 28px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(2.6rem,5vw,4.7rem);
+
+
+  line-height:1.04;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.impact-meta{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+
+  gap:12px;
+
+
+  margin-top:35px;
+
+
+}
+
+
+
+
+.impact-stat{
+
+
+  padding:22px;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:18px;
+
+
+  background:var(--glass);
+
+
+}
+
+
+
+
+.impact-stat strong{
+
+
+  display:block;
+
+
+  margin-bottom:8px;
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.15rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.impact-stat span{
+
+
+  color:var(--muted);
+
+
+  font-size:.78rem;
+
+
+  line-height:1.6;
+
+
+}
+
+
+
+
+/* =========================================================
+   ENVIRONMENT
+========================================================= */
+
+
+.environment{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    1fr 1fr;
+
+
+  gap:80px;
+
+
+  align-items:center;
+
+
+}
+
+
+
+
+.environment-image{
+
+
+  overflow:hidden;
+
+
+  border-radius:28px;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.environment-image img{
+
+
+  width:100%;
+
+
+  aspect-ratio:4/5;
+
+
+  object-fit:cover;
+
+
+  display:block;
+
+
+  transition:1s ease;
+
+
+}
+
+
+
+
+.environment-image:hover img{
+
+
+  transform:scale(1.04);
+
+
+}
+
+
+
+
+.environment-content h3{
+
+
+  margin:
+    20px 0 30px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(2.6rem,5vw,4.6rem);
+
+
+  line-height:1.05;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.environment-points{
+
+
+  margin-top:40px;
+
+
+  border-top:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.environment-point{
+
+
+  padding:
+    24px 0;
+
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.environment-point h4{
+
+
+  margin-bottom:8px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.35rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.environment-point p{
+
+
+  color:var(--muted);
+
+
+  font-size:.88rem;
+
+
+  line-height:1.8;
+
+
+}
+
+
+
+
+/* =========================================================
+   SELECTED WORK
+========================================================= */
+
+
+.work-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+
+  gap:22px;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.work-card{
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:25px;
+
+
+  background:var(--glass);
+
+
+  transition:.4s ease;
+
+
+}
+
+
+
+
+.work-card:hover{
+
+
+  transform:translateY(-7px);
+
+
+  background:var(--surface-2);
+
+
+}
+
+
+
+
+.work-image{
+
+
+  overflow:hidden;
+
+
+}
+
+
+
+
+.work-image img{
+
+
+  width:100%;
+
+
+  aspect-ratio:4/3;
+
+
+  display:block;
+
+
+  object-fit:cover;
+
+
+  transition:.8s ease;
+
+
+}
+
+
+
+
+.work-card:hover img{
+
+
+  transform:scale(1.045);
+
+
+}
+
+
+
+
+.work-content{
+
+
+  padding:28px;
+
+
+}
+
+
+
+
+.work-type{
+
+
+  color:var(--accent);
+
+
+  font-size:8px;
+
+
+  letter-spacing:.18em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+.work-content h3{
+
+
+  margin:
+    15px 0;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.75rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.work-content p{
+
+
+  color:var(--muted);
+
+
+  font-size:.88rem;
+
+
+  line-height:1.8;
+
+
+}
+
+
+
+
+/* =========================================================
+   STORIES
+========================================================= */
+
+
+.stories{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+
+  gap:22px;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.story{
+
+
+  overflow:hidden;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:24px;
+
+
+  background:var(--glass);
+
+
+  transition:.4s ease;
+
+
+}
+
+
+
+
+.story:hover{
+
+
+  transform:translateY(-7px);
+
+
+  background:var(--surface-2);
+
+
+}
+
+
+
+
+.story-image{
+
+
+  overflow:hidden;
+
+
+}
+
+
+
+
+.story-image img{
+
+
+  width:100%;
+
+
+  aspect-ratio:4/3;
+
+
+  object-fit:cover;
+
+
+  display:block;
+
+
+  transition:.8s ease;
+
+
+}
+
+
+
+
+.story:hover img{
+
+
+  transform:scale(1.04);
+
+
+}
+
+
+
+
+.story-content{
+
+
+  padding:28px;
+
+
+}
+
+
+
+
+.story-date{
+
+
+  color:var(--accent);
+
+
+  font-size:8px;
+
+
+  letter-spacing:.18em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+.story h3{
+
+
+  margin:
+    15px 0;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.7rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.story p{
+
+
+  color:var(--muted);
+
+
+  font-size:.88rem;
+
+
+  line-height:1.8;
+
+
+}
+
+
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+
+.quote-section{
+
+
+  min-height:80vh;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  padding:
+    130px 30px;
+
+
+  position:relative;
+
+
+  text-align:center;
+
+
+  background:
+
+
+    linear-gradient(
+      rgba(3,8,5,.67),
+      rgba(3,8,5,.92)
+    ),
+
+
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2400&q=90")
+
+
+    center/cover fixed;
+
+
+}
+
+
+
+
+.light .quote-section{
+
+
+  background:
+
+
+    linear-gradient(
+      rgba(243,240,232,.65),
+      rgba(243,240,232,.92)
+    ),
+
+
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2400&q=90")
+
+
+    center/cover fixed;
+
+
+}
+
+
+
+
+.quote{
+
+
+  max-width:1050px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(2.2rem,5.5vw,5rem);
+
+
+  font-weight:400;
+
+
+  line-height:1.22;
+
+
+}
+
+
+
+
+.quote span{
+
+
+  color:var(--accent);
+
+
+}
+
+
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+
+.approach{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    .8fr 1.2fr;
+
+
+  gap:90px;
+
+
+}
+
+
+
+
+.approach-list{
+
+
+  border-top:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.approach-item{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    80px 1fr;
+
+
+  gap:30px;
+
+
+  padding:
+    28px 0;
+
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+
+}
+
+
+
+
+.approach-item span{
+
+
+  color:var(--accent);
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.3rem;
+
+
+}
+
+
+
+
+.approach-item h3{
+
+
+  margin-bottom:10px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:1.6rem;
+
+
+  font-weight:500;
+
+
+}
+
+
+
+
+.approach-item p{
+
+
+  color:var(--muted);
+
+
+  line-height:1.8;
+
+
+  font-size:.9rem;
+
+
+}
+
+
+
+
+/* =========================================================
+   COLLABORATION
+========================================================= */
+
+
+.collaboration{
+
+
+  text-align:center;
+
+
+}
+
+
+
+
+.collaboration .text{
+
+
+  margin:auto;
+
+
+}
+
+
+
+
+.collaboration-grid{
+
+
+  display:grid;
+
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+
+  gap:15px;
+
+
+  margin-top:60px;
+
+
+}
+
+
+
+
+.collaboration-item{
+
+
+  min-height:160px;
+
+
+  padding:25px;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:20px;
+
+
+  color:var(--muted);
+
+
+  text-align:center;
+
+
+  font-size:10px;
+
+
+  letter-spacing:.12em;
+
+
+  text-transform:uppercase;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.collaboration-item:hover{
+
+
+  color:var(--accent);
+
+
+  border-color:var(--accent);
+
+
+}
+
+
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+
+.cta{
+
+
+  text-align:center;
+
+
+}
+
+
+
+
+.cta-title{
+
+
+  margin:
+    25px auto 35px;
+
+
+  max-width:950px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:
+    clamp(3.4rem,7vw,7rem);
+
+
+  font-weight:500;
+
+
+  line-height:.94;
+
+
+  letter-spacing:-4px;
+
+
+}
+
+
+
+
+.cta .text{
+
+
+  margin:auto;
+
+
+}
+
+
+
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
+
+.socials{
+
+
+  display:flex;
+
+
+  justify-content:center;
+
+
+  flex-wrap:wrap;
+
+
+  gap:12px;
+
+
+  margin-top:40px;
+
+
+}
+
+
+
+
+.social{
+
+
+  min-width:48px;
+
+
+  height:48px;
+
+
+  padding:
+    0 18px;
+
+
+  display:flex;
+
+
+  align-items:center;
+
+
+  justify-content:center;
+
+
+  border:
+    1px solid
+    var(--line);
+
+
+  border-radius:13px;
+
+
+  background:var(--glass);
+
+
+  text-decoration:none;
+
+
+  font-size:9px;
+
+
+  letter-spacing:.1em;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.social:hover{
+
+
+  transform:translateY(-4px);
+
+
+  color:var(--accent);
+
+
+  border-color:var(--accent);
+
+
+}
+
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+
+footer{
+
+
+  padding:
+    85px 30px;
+
+
+  border-top:
+    1px solid
+    var(--line);
+
+
+  text-align:center;
+
+
+}
+
+
+
+
+.footer-logo{
+
+
+  margin-bottom:15px;
+
+
+  font-family:'Playfair Display',serif;
+
+
+  font-size:2.5rem;
+
+
+}
+
+
+
+
+.footer-sub{
+
+
+  color:var(--muted);
+
+
+  font-size:.85rem;
+
+
+  line-height:1.9;
+
+
+}
+
+
+
+
+.footer-links{
+
+
+  display:flex;
+
+
+  justify-content:center;
+
+
+  flex-wrap:wrap;
+
+
+  gap:25px;
+
+
+  margin-top:30px;
+
+
+}
+
+
+
+
+.footer-links a{
+
+
+  color:var(--muted);
+
+
+  font-size:9px;
+
+
+  letter-spacing:.15em;
+
+
+  text-decoration:none;
+
+
+  text-transform:uppercase;
+
+
+  transition:.3s ease;
+
+
+}
+
+
+
+
+.footer-links a:hover{
+
+
+  color:var(--accent);
+
+
+}
+
+
+
+
+.copyright{
+
+
+  margin-top:35px;
+
+
+  color:var(--muted);
+
+
+  opacity:.65;
+
+
+  font-size:8px;
+
+
+  letter-spacing:.12em;
+
+
+  text-transform:uppercase;
+
+
+}
+
+
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+
+.reveal{
+
+
+  opacity:0;
+
+
+  transform:
+    translateY(35px);
+
+
+  transition:
+    opacity .9s ease,
+    transform .9s ease;
+
+
+}
+
+
+
+
+.reveal.visible{
+
+
+  opacity:1;
+
+
+  transform:
+    translateY(0);
+
+
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+@media(max-width:1050px){
+
+
+  .section{
+
+
+    padding:
+      120px 25px;
+
+
+  }
+
+
+
+
+  .intro-grid{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:60px;
+
+
+  }
+
+
+
+
+  .intro-image{
+
+
+    max-width:760px;
+
+
+    margin:auto;
+
+
+  }
+
+
+
+
+  .intro-content{
+
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+  }
+
+
+
+
+  .activity-grid{
+
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+
+  }
+
+
+
+
+  .world-grid{
+
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+
+  }
+
+
+
+
+  .feature,
+  .feature.reverse{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:40px;
+
+
+  }
+
+
+
+
+  .sound-layout{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:50px;
+
+
+  }
+
+
+
+
+  .sound-intro{
+
+
+    position:static;
+
+
+  }
+
+
+
+
+  .impact{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:50px;
+
+
+  }
+
+
+
+
+  .impact-image{
+
+
+    max-width:700px;
+
+
+    margin:auto;
+
+
+  }
+
+
+
+
+  .approach{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:50px;
+
+
+  }
+
+
+
+
+  .collaboration-grid{
+
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+
+  }
+
+
+}
+
+
+
+
+@media(max-width:720px){
+
+
+  .hero{
+
+
+    min-height:94vh;
+
+
+    padding:
+      100px 20px;
+
+
+  }
+
+
+
+
+  .hero h1{
+
+
+    font-size:
+      clamp(4.4rem,19vw,7rem);
+
+
+    letter-spacing:-4px;
+
+
+  }
+
+
+
+
+  .hero-subtitle{
+
+
+    font-size:.94rem;
+
+
+  }
+
+
+
+
+  .section{
+
+
+    padding:
+      95px 20px;
+
+
+  }
+
+
+
+
+  .section-title{
+
+
+    letter-spacing:-2px;
+
+
+  }
+
+
+
+
+  .intro-image,
+  .intro-image img{
+
+
+    min-height:550px;
+
+
+  }
+
+
+
+
+  .activity-grid{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .duality{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .value-grid{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .world-grid{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .community-feature{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .community-card,
+  .community-card img{
+
+
+    min-height:430px;
+
+
+  }
+
+
+
+
+  .environment{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:50px;
+
+
+  }
+
+
+
+
+  .work-grid{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .stories{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .impact-meta{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .collaboration-grid{
+
+
+    grid-template-columns:1fr 1fr;
+
+
+  }
+
+
+
+
+  .quote-section{
+
+
+    min-height:65vh;
+
+
+    background-attachment:scroll;
+
+
+  }
+
+
+
+
+  .cta-title{
+
+
+    letter-spacing:-2px;
+
+
+  }
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+  .theme{
+
+
+    top:14px;
+
+
+    right:14px;
+
+
+  }
+
+
+
+
+  .hero{
+
+
+    min-height:90vh;
+
+
+  }
+
+
+
+
+  .hero h1{
+
+
+    font-size:4.3rem;
+
+
+    line-height:.82;
+
+
+  }
+
+
+
+
+  .hero::before{
+
+
+    font-size:7rem;
+
+
+  }
+
+
+
+
+  .intro-image,
+  .intro-image img{
+
+
+    min-height:470px;
+
+
+  }
+
+
+
+
+  .image-caption{
+
+
+    left:20px;
+
+
+    right:20px;
+
+
+    bottom:20px;
+
+
+    font-size:7px;
+
+
+  }
+
+
+
+
+  .sound-item{
+
+
+    grid-template-columns:
+      50px 1fr;
+
+
+    gap:15px;
+
+
+  }
+
+
+
+
+  .approach-item{
+
+
+    grid-template-columns:
+      55px 1fr;
+
+
+    gap:15px;
+
+
+  }
+
+
+
+
+  .collaboration-grid{
+
+
+    grid-template-columns:1fr;
+
+
+  }
+
+
+
+
+  .quote{
+
+
+    font-size:2.35rem;
+
+
+  }
+
+
+}
+
+
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+  html{
+
+
+    scroll-behavior:auto;
+
+
+  }
+
+
+
+
+  *,
+  *::before,
+  *::after{
+
+
+    animation:none !important;
+
+
+    transition:none !important;
+
+
+  }
+
+
+
+
+  .reveal{
+
+
+    opacity:1;
+
+
+    transform:none;
+
+
+  }
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+<!-- =======================================================
+     THEME
+======================================================= -->
+
+
+<button
+  class="theme"
+  id="themeToggle"
+  type="button"
+  aria-label="Toggle light and dark mode"
+>
+  LIGHT / DARK
+</button>
+
+
+
+
+<!-- =======================================================
+     SIDE NAV
+======================================================= -->
+
+
+<nav
+  class="side-nav"
+  aria-label="Section navigation"
+>
+
+
+  <a href="#about" title="About"></a>
+
+
+  <a href="#activity" title="Activity"></a>
+
+
+  <a href="#identity" title="Identity"></a>
+
+
+  <a href="#world" title="The World"></a>
+
+
+  <a href="#fashion" title="Fashion"></a>
+
+
+  <a href="#sound" title="Sound"></a>
+
+
+  <a href="#community" title="Community"></a>
+
+
+  <a href="#impact" title="Impact"></a>
+
+
+  <a href="#environment" title="Environment"></a>
+
+
+  <a href="#work" title="Selected Work"></a>
+
+
+  <a href="#stories" title="Stories"></a>
+
+
+  <a href="#approach" title="Approach"></a>
+
+
+  <a href="#contact" title="Contact"></a>
+
+
+</nav>
+
+
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+
+<header class="hero">
+
+
+  <div class="hero-inner">
+
+
+    <div class="eyebrow">
+      CULTURE • ART • SOUND • FASHION • COMMUNITY
+    </div>
+
+
+
+
+    <h1>
+      GhViƆɔ
+    </h1>
+
+
+
+
+    <p class="hero-subtitle">
+
+
+      
+
+      
+
+
+     We don’t just talk about culture. We create spaces for it to happen.
+
+
+    </p>
+
+
+
+
+    <div class="hero-location">
+
+
+      Kenya • East Africa • Beyond
+
+
+    </div>
+
+
+
+
+    <div class="actions">
+
+
+      <a
+        href="#about"
+        class="btn primary"
+      >
+        Enter GhViƆɔ
+      </a>
+
+
+
+
+      <a
+        href="#work"
+        class="btn secondary"
+      >
+        Explore Our Work
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+</header>
+
+
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="about"
+>
+
+
+  <div class="intro-grid">
+
+
+
+
+    <div class="intro-image">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1800&q=90"
+        alt="Landscape representing the GhViƆɔ world"
+      >
+
+
+
+
+      <div class="image-caption">
+
+
+        <span>
+          GhViƆɔ
+        </span>
+
+
+        <span>
+          Culture • People • Planet
+        </span>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="intro-content">
+
+
+      <div class="eyebrow">
+        WHAT IS GhViƆɔ
+      </div>
+
+
+
+
+      <h2 class="intro-heading">
+
+
+        More than a brand.
+
+
+        <span>
+          A platform in motion.
+        </span>
+
+
+      </h2>
+
+
+
+
+      <div class="gold-line"></div>
+
+
+
+
+      <div class="text">
+
+<p> GhViƆɔ is a Kenyan creative and cultural platform exploring where fashion, art, sound, sport and community meet. </p>
+
+<p> We create across apparel, photography, music, football, cultural partnerships and community projects. </p>
+
+<p> We are interested in expression with intention: what we create, why we create it, who we create it with and what it contributes. </p>
+
+<p> Already in motion — building relationships, creating experiences and developing a growing body of work. </p>
+
+</div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     IDENTITY
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="identity"
+>
+
+
+  <div class="eyebrow">
+    IDENTITY
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Between what is seen<br>
+    and what is felt.
+
+
+  </h2>
+
+
+
+
+  <div class="text">
+
+
+    <p>
+  GhViƆɔ explores the relationship between
+  expression and identity.
+</p>
+
+<p>
+  What we wear. What we hear. The spaces we create.
+  The games we play. The people we gather with.
+</p>
+
+<p>
+  Culture lives in these details.
+</p>
+
+
+  </div>
+
+
+
+
+  <div class="duality">
+
+
+
+
+    <article class="duality-card">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=90"
+        alt="Fashion and personal expression"
+      >
+
+
+
+
+      <div class="duality-content">
+
+
+        <div class="duality-number">
+          01
+        </div>
+
+
+
+
+        <h3>
+          Expression
+        </h3>
+
+
+
+
+        <p>
+          The visible world — clothing, sound,
+          movement, design and the things we
+          choose to place into the world.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="duality-card">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=90"
+        alt="Quiet natural landscape"
+      >
+
+
+
+
+      <div class="duality-content">
+
+
+        <div class="duality-number">
+          02
+        </div>
+
+
+
+
+        <h3>
+          Intention
+        </h3>
+
+
+
+
+        <p>
+          The quieter world — values, discipline,
+          sustainability, community and the
+          reasons behind what we create.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     PRINCIPLES
+======================================================= -->
+
+
+<section
+  class="section reveal"
+>
+
+
+  <div class="eyebrow">
+    FOUNDATION
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Principles that<br>
+    keep us grounded.
+
+
+  </h2>
+
+
+
+
+  <div class="value-grid">
+
+
+
+
+    <article class="value-card">
+
+
+      <div class="value-number">
+        01
+      </div>
+
+
+
+
+      <div>
+
+
+        <h3>
+          Intentionality
+        </h3>
+
+
+
+
+        <p>
+          Create with purpose. Choose with care.
+          Question what is unnecessary before
+          adding more to the world.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="value-card">
+
+
+      <div class="value-number">
+        02
+      </div>
+
+
+
+
+      <div>
+
+
+        <h3>
+          Collaboration
+        </h3>
+
+
+
+
+        <p>
+          Bring different people, disciplines and
+          perspectives together to create work that
+          becomes stronger through connection.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="value-card">
+
+
+      <div class="value-number">
+        03
+      </div>
+
+
+
+
+      <div>
+
+
+        <h3>
+          Endurance
+        </h3>
+
+
+
+
+        <p>
+          Trends disappear. Meaning can endure.
+          GhViƆɔ looks toward ideas, objects and
+          experiences capable of remaining relevant.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     THE WORLD
+======================================================= -->
+
+
+<section class="section reveal" id="activity">
+
+  <style>
+    #activity {
+      padding: 80px 6%;
+      background: #000;
+      color: #fff;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .section-title {
+      font-size: clamp(48px, 7vw, 100px);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      margin: 0 0 30px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .text {
+      max-width: 650px;
+      margin-bottom: 60px;
+    }
+
+    .text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .activity-card {
+      position: relative;
+      min-height: 420px;
+      padding: 35px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      overflow: hidden;
+      isolation: isolate;
+
+      color: #fff;
+
+      background-size: cover;
+      background-position: center;
+
+      border: 1px solid rgba(255,255,255,0.12);
+
+      transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+    }
+
+    .activity-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    .activity-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.92) 0%,
+          rgba(0,0,0,0.55) 50%,
+          rgba(0,0,0,0.2) 100%
+        );
+
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+
+    .activity-card:hover::before {
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.95),
+          rgba(0,0,0,0.45)
+        );
+    }
+
+    .activity-number {
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .activity-card h3 {
+      font-size: 36px;
+      margin: 0 0 15px;
+      letter-spacing: -0.03em;
+      color: #fff;
+    }
+
+    .activity-card p {
+      max-width: 520px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      white-space: pre-line;
+    }
+
+
+    /* =========================
+       01 — FOOTBALL
+       ========================= */
+
+    .activity-card:nth-child(1) {
+      background-image:
+        url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       02 — APPAREL
+       ========================= */
+
+    .activity-card:nth-child(2) {
+      background-image:
+        url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       03 — COLLABORATION
+       ========================= */
+
+    .activity-card:nth-child(3) {
+      background-image:
+        url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       04 — COMMUNITY
+       ========================= */
+
+    .activity-card:nth-child(4) {
+      background-image:
+        url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       05 — MUSIC
+       ========================= */
+
+    .activity-card:nth-child(5) {
+      background-image:
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       06 — PHOTOGRAPHY
+       ========================= */
+
+    .activity-card:nth-child(6) {
+      background-image:
+        url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       07 — CULTURE
+       ========================= */
+
+    .activity-card:nth-child(7) {
+      background-image:
+        url("https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       08 — CREATIVE
+       ========================= */
+
+    .activity-card:nth-child(8) {
+      background-image:
+        url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85");
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 768px) {
+
+      #activity {
+        padding: 60px 20px;
+      }
+
+      .activity-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .activity-card {
+        min-height: 380px;
+        padding: 25px;
+      }
+
+      .activity-card h3 {
+        font-size: 30px;
+      }
+
+      .activity-card p {
+        font-size: 15px;
+      }
+    }
+
+  </style>
+
+
+  <div class="eyebrow">
+    ALREADY IN MOTION
+  </div>
+
+
+  <h2 class="section-title">
+    The work is<br>
+    already happening.
+  </h2>
+
+
+  <div class="text">
+    <p>
+      GhViƆɔ is not an idea waiting to begin.
+      The platform is already creating, collaborating,
+      and bringing people together.
+    </p>
+  </div>
+
+
+  <div class="activity-grid">
+
+
+    <!-- 01 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        01
+      </div>
+
+      <div>
+        <h3>Football</h3>
+
+        <p>
+More than a game. A point of connection.
+
+Games. Community. One spirit.
+
+Shoulder to shoulder.
+
+Jerseys designed and sourced with the support of @kkafi_sports_house.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 02 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        02
+      </div>
+
+      <div>
+        <h3>Apparel</h3>
+
+        <p>
+From concept to form.
+
+Designed. Made. Worn.
+
+Identity, in motion.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 03 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        03
+      </div>
+
+      <div>
+        <h3>Collaboration</h3>
+
+        <p>
+Across sound. Across vision.
+
+Collaborations with creatives like DJ Bravoh, Louis Mulema (@ICapture Portraits), Roy(@the.clicksoflife) — connecting music, photography, and culture.
+
+Different mediums. One spirit.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 04 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        04
+      </div>
+
+      <div>
+        <h3>Community</h3>
+
+        <p>
+From community initiatives with Rotaract Club of Kikuyu to our collaboration with Kenny Fries, GhViƆɔ creates spaces where people, ideas, and culture meet.
+
+Different stories. Shared ground.
+
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 05 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        05
+      </div>
+
+      <div>
+        <h3>Music</h3>
+
+        <p>
+Sound becomes a meeting point.
+
+Rhythm. Energy. Expression.
+
+Different voices. One atmosphere.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 06 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        06
+      </div>
+
+      <div>
+        <h3>Photography</h3>
+
+        <p>
+Moments become visual language.
+
+People. Places. Stories.
+
+Captured as they happen.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 07 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        07
+      </div>
+
+      <div>
+        <h3>Culture</h3>
+
+        <p>
+Rooted in identity.
+
+Inspired by people, place, sound, fashion and movement.
+
+Culture in motion.
+        </p>
+      </div>
+
+    </article>
+
+
+    <!-- 08 -->
+    <article class="activity-card">
+
+      <div class="activity-number">
+        08
+      </div>
+
+      <div>
+        <h3>Creative</h3>
+
+        <p>
+Ideas become something tangible.
+
+Design. Experimentation. Expression.
+
+Creating what comes next.
+        </p>
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+
+<!-- =======================================================
+     FASHION
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="fashion"
+>
+
+
+  <div class="feature">
+
+
+
+
+    <div class="feature-image">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2000&q=90"
+        alt="Contemporary fashion"
+      >
+
+
+    </div>
+
+
+
+
+    <div class="feature-content">
+
+
+      <div class="eyebrow">
+        FASHION
+      </div>
+
+
+
+
+      <h3> Local design. Shared expression. </h3>
+
+<p> Fashion within GhViƆɔ is not simply about garments or seasonal trends. </p>
+
+<p> It is an exploration of identity, proportion, material, craftsmanship and culture. </p>
+
+<p> GhViƆɔ collaborates with local designers and ethical fashion brands, creating space to showcase their work alongside its own. </p>
+
+<h3> Different voices. One culture. </h3>
+
+
+
+
+      <div class="actions"
+        style="justify-content:flex-start;margin-top:30px;"
+      >
+
+
+        <a
+          href="#contact"
+          class="btn secondary"
+        >
+          Work With Us
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     SOUND
+======================================================= -->
+
+
+<section
+  class="section sound-section reveal"
+  id="sound"
+>
+
+
+  <div class="sound-layout">
+
+
+
+
+    <div class="sound-intro">
+
+
+      <div class="eyebrow">
+        SOUND
+      </div>
+
+
+
+
+      <h2 class="section-title">
+
+
+        Sound is<br>
+        architecture.
+
+
+      </h2>
+
+
+
+
+      <div class="text">
+
+
+        <p>
+          Music can shape a room before anyone
+          says a word.
+        </p>
+
+
+
+
+        <p>
+          It can carry memory, identity, tension,
+          celebration and belonging.
+        </p>
+
+
+
+
+        <p>
+          GhViƆɔ approaches sound as another
+          material through which culture can be
+          experienced.
+        </p>
+
+
+
+
+        <p>
+          The platform has already begun exploring
+          this space through collaboration with creatives like DJ Bravoh.
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="sound-list">
+
+
+
+
+      <div class="sound-item">
+
+
+        <div class="sound-number">
+          01
+        </div>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Listening
+          </h3>
+
+
+
+
+          <p>
+            Discovering sounds, artists, environments
+            and moments that deserve attention.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="sound-item">
+
+
+        <div class="sound-number">
+          02
+        </div>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Curation
+          </h3>
+
+
+
+
+          <p>
+            Bringing different sounds together to
+            create atmosphere, context and identity.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="sound-item">
+
+
+        <div class="sound-number">
+          03
+        </div>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Experience
+          </h3>
+
+
+
+
+          <p>
+            Connecting sound to place, people,
+            movement and memory.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="sound-item">
+
+
+        <div class="sound-number">
+          04
+        </div>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Collaboration
+          </h3>
+
+
+
+
+          <p>
+            Creating room for musicians, DJs,
+            producers, selectors, artists and
+            other creative voices.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     COMMUNITY + SPORT
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="community"
+>
+
+
+  <div class="eyebrow">
+    COMMUNITY • SPORT
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Culture happens<br>
+    together.
+
+
+  </h2>
+
+
+
+
+  <div class="text">
+
+
+    <p>
+      Some of the strongest cultural experiences
+      don't happen behind screens.
+    </p>
+
+
+
+
+    <p>
+      They happen when people gather — around a
+      football pitch, a sound system, a conversation,
+      a shared meal, a creative project or a common idea.
+    </p>
+
+
+
+
+    <p>
+      GhViƆɔ has already organised and hosted
+      several football games, turning
+      sport into a practical expression of community.
+    </p>
+
+
+  </div>
+
+
+
+
+  <div class="community-feature">
+
+
+
+
+    <article class="community-card">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=2000&q=90"
+        alt="Football and community"
+      >
+
+
+
+
+      <div class="community-overlay">
+
+
+        <div class="community-tag">
+          SPORT
+        </div>
+
+
+
+
+        <h3>
+          The game is bigger
+          than the score.
+        </h3>
+
+
+
+
+        <p>
+          Football can become a meeting point —
+          a place where competition, friendship,
+          identity and community intersect.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="community-card">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=2000&q=90"
+        alt="Community gathering"
+      >
+
+
+
+
+      <div class="community-overlay">
+
+
+        <div class="community-tag">
+          COMMUNITY
+        </div>
+
+
+
+
+        <h3>
+          Gather with intention.
+        </h3>
+
+
+
+
+        <p>
+          Experiences become meaningful when
+          people leave with more connection than
+          they arrived with.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     ROTARACT / COMMUNITY IMPACT
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="impact"
+>
+
+
+  <div class="impact">
+
+
+
+
+    <div class="impact-image">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1800&q=90"
+        alt="Community collaboration and creative work"
+      >
+
+
+    </div>
+
+
+
+
+    <div class="impact-content">
+
+
+      <div class="eyebrow">
+        PARTNERSHIP • COMMUNITY IMPACT
+      </div>
+
+
+
+
+      <h3>
+        Creativity can
+        become contribution.
+      </h3>
+
+
+
+
+      <div class="text">
+
+
+        <p>
+          GhViƆɔ partnered with the
+          Rotaract Club of Kikuyu as a sponsor
+          for their installation ceremony.
+        </p>
+
+
+
+
+        <p>
+          As part of the collaboration, GhViƆɔ
+          produced an original art piece by Louis Mulema which
+          was auctioned during the event.
+        </p>
+
+
+
+
+        <p>
+          The proceeds from the auction went
+          toward the club's projects, connecting
+          creative expression with tangible
+          community impact.
+        </p>
+
+
+
+
+        <p>
+          For GhViƆɔ, this represents an important
+          part of what collaboration can mean:
+          creating something that doesn't simply
+          look good, but contributes beyond itself.
+        </p>
+
+
+      </div>
+    </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     ENVIRONMENT
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="environment"
+>
+
+
+  <div class="environment">
+
+
+
+
+    <div class="environment-image">
+
+
+      <img
+        src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1800&q=90"
+        alt="Nature and sustainability"
+      >
+
+
+    </div>
+
+
+
+
+    <div class="environment-content">
+
+
+      <div class="eyebrow">
+        ENVIRONMENT
+      </div>
+
+
+
+
+      <h3>
+        Longevity is
+        a form of luxury.
+      </h3>
+
+
+
+
+      <div class="text">
+
+
+        <p>
+          Sustainability isn't only an environmental
+          statement. It is a way of thinking about
+          what we make, what we consume and what
+          we choose to keep.
+        </p>
+
+
+
+
+        <p>
+          GhViƆɔ is interested in the relationship
+          between design and responsibility —
+          creating things that are considered,
+          useful and capable of lasting.
+        </p>
+
+
+      </div>
+
+
+
+
+      <div class="environment-points">
+
+
+
+
+        <div class="environment-point">
+
+
+          <h4>
+            Materials
+          </h4>
+
+
+          <p>
+            Greater awareness of what objects are
+            made from and what happens to them later.
+          </p>
+
+
+        </div>
+
+
+
+
+        <div class="environment-point">
+
+
+          <h4>
+            Longevity
+          </h4>
+
+
+          <p>
+            Moving away from disposable culture
+            toward things designed to remain.
+          </p>
+
+
+        </div>
+
+
+
+
+        <div class="environment-point">
+
+
+          <h4>
+            Responsibility
+          </h4>
+
+
+          <p>
+            Understanding that every creative
+            decision exists within a larger ecosystem.
+          </p>
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     WIDE IMAGE
+======================================================= -->
+
+
+<section class="section reveal">
+
+
+  <div
+    class="intro-image"
+    style="min-height:auto;"
+  >
+
+
+    <img
+      src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=90"
+      alt="African landscape"
+      style="min-height:auto;aspect-ratio:2.2/1;"
+    >
+
+
+
+
+    <div class="image-caption">
+
+
+      <span>
+        EAST AFRICA
+      </span>
+
+
+      <span>
+        PLACE • PEOPLE • POSSIBILITY
+      </span>
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     SELECTED WORK
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="work"
+>
+
+
+  <div class="eyebrow">
+    SELECTED WORK
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Work that exists<br>
+    beyond the idea.
+
+
+  </h2>
+
+
+
+
+  <div class="text">
+
+
+    <p>
+      Every project becomes part of the GhViƆɔ
+      archive — a record of people, places,
+      collaborations and experiences that shape
+      the platform.
+    </p>
+
+
+  </div>
+
+
+
+
+  <div class="work-grid">
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1400&q=90"
+          alt="GhViƆɔ football community"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          SPORT • COMMUNITY
+        </div>
+
+
+
+
+        <h3>
+          GhViƆɔ Football
+        </h3>
+
+
+
+
+        <p>
+          A growing series of football games
+          organised and hosted by GhViƆɔ,
+          creating spaces for people to connect
+          through sport.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=1400&q=90"
+          alt="Original artwork"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          ART • COMMUNITY IMPACT
+        </div>
+
+
+
+
+        <h3>
+          The Auctioned Artwork
+        </h3>
+
+
+
+
+        <p>
+          An original GhViƆɔ art piece created
+          for the Rotaract Club of Kikuyu's
+          installation ceremony and auctioned
+          to support the club's projects.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=90"
+          alt="Creative collaboration and sound"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          SOUND • COLLABORATION
+        </div>
+
+
+
+
+        <h3>
+          Creative Partnerships
+        </h3>
+
+
+
+
+        <p>
+          Collaborations with creatives including
+          a DJ and an artistic photographer,
+          extending GhViƆɔ into sound and
+          visual culture.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90"
+          alt="GhViƆɔ apparel"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          FASHION • IDENTITY
+        </div>
+
+
+
+
+        <h3>
+          GhViƆɔ Apparel
+        </h3>
+
+
+
+
+        <p>
+          Sample apparel developed and distributed
+          to individuals as the physical expression
+          of the GhViƆɔ identity.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1400&q=90"
+          alt="Community gathering"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          COMMUNITY
+        </div>
+
+
+
+
+        <h3>
+          Gathering
+        </h3>
+
+
+
+
+        <p>
+          Building real-world points of connection
+          where sport, creativity, conversation
+          and community can meet.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="work-card">
+
+
+      <div class="work-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1400&q=90"
+          alt="GhViƆɔ visual culture"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="work-content">
+
+
+        <div class="work-type">
+          CULTURE • VISUALS
+        </div>
+
+
+
+
+        <h3>
+          The GhViƆɔ World
+        </h3>
+
+
+
+
+        <p>
+          A developing visual language built
+          around people, places, movement,
+          culture and intentional living.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     STORIES
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="stories"
+>
+
+
+  <div class="eyebrow">
+    STORIES
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Where ideas<br>
+    meet reality.
+
+
+  </h2>
+
+
+
+
+  <div class="stories">
+
+
+
+
+    <article class="story">
+
+
+      <div class="story-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90"
+          alt="Fashion culture"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="story-content">
+
+
+        <div class="story-date">
+          FASHION
+        </div>
+
+
+
+
+        <h3>
+          Clothing as language.
+        </h3>
+
+
+
+
+        <p>
+          Exploring how material, silhouette,
+          colour and craftsmanship become
+          expressions of identity.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="story">
+
+
+      <div class="story-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=90"
+          alt="Music and creative culture"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="story-content">
+
+
+        <div class="story-date">
+          SOUND
+        </div>
+
+
+
+
+        <h3>
+          The spaces between songs.
+        </h3>
+
+
+
+
+        <p>
+          Sound is more than what comes through
+          speakers. It changes how a place feels
+          and how people remember it.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+    <article class="story">
+
+
+      <div class="story-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1400&q=90"
+          alt="People collaborating"
+        >
+
+
+      </div>
+
+
+
+
+      <div class="story-content">
+
+
+        <div class="story-date">
+          COMMUNITY
+        </div>
+
+
+
+
+        <h3>
+          Better together.
+        </h3>
+
+
+
+
+        <p>
+          Culture grows when people contribute
+          their own perspective to something
+          larger than themselves.
+        </p>
+
+
+      </div>
+
+
+    </article>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     QUOTE
+======================================================= -->
+
+
+<section
+  class="quote-section reveal"
+>
+
+
+  <div class="quote">
+
+
+    We don't need to add more noise
+    to the world.
+
+
+    <br><br>
+
+
+    We need to create things
+    <span>worth listening to.</span>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     APPROACH
+======================================================= -->
+
+
+<section
+  class="section reveal"
+  id="approach"
+>
+
+
+  <div class="approach">
+
+
+
+
+    <div>
+
+
+      <div class="eyebrow">
+        THE APPROACH
+      </div>
+
+
+
+
+      <h2 class="section-title">
+
+
+        Create<br>
+        with intention.
+
+
+      </h2>
+
+
+
+
+      <div class="text">
+
+
+        <p>
+          GhViƆɔ is less interested in simply
+          producing things and more interested
+          in understanding why they should exist.
+        </p>
+
+
+
+
+        <p>
+          Every project can begin with curiosity,
+          develop through collaboration and become
+          something that contributes to the people
+          and culture around it.
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="approach-list">
+
+
+
+
+      <div class="approach-item">
+
+
+        <span>
+          01
+        </span>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Observe
+          </h3>
+
+
+
+
+          <p>
+            Look closely at culture, people,
+            materials, sounds, spaces and
+            the details others overlook.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="approach-item">
+
+
+        <span>
+          02
+        </span>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Question
+          </h3>
+
+
+
+
+          <p>
+            Ask whether something needs to exist,
+            and if it does, what it should contribute.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="approach-item">
+
+
+        <span>
+          03
+        </span>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Create
+          </h3>
+
+
+
+
+          <p>
+            Bring together creative disciplines,
+            people and ideas to make something real.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="approach-item">
+
+
+        <span>
+          04
+        </span>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Connect
+          </h3>
+
+
+
+
+          <p>
+            Use experiences, collaborations and
+            partnerships to bring people closer
+            to culture and to one another.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="approach-item">
+
+
+        <span>
+          05
+        </span>
+
+
+
+
+        <div>
+
+
+          <h3>
+            Endure
+          </h3>
+
+
+
+
+          <p>
+            Build with enough meaning, quality and
+            intention to remain relevant after the
+            moment has passed.
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     COLLABORATION
+======================================================= -->
+
+
+<section
+  class="section collaboration reveal"
+>
+
+
+  <div class="eyebrow">
+    COLLABORATION
+  </div>
+
+
+
+
+  <h2 class="section-title">
+
+
+    Bring your world<br>
+    into ours.
+
+
+  </h2>
+
+
+
+
+  <div class="text">
+
+
+    <p>
+      GhViƆɔ creates room for people working across
+      different disciplines — artists, designers,
+      musicians, photographers, makers, athletes,
+      cultural thinkers, environmentalists,
+      organisations and communities.
+    </p>
+
+
+  </div>
+
+
+
+
+  <div class="collaboration-grid">
+
+
+
+
+    <div class="collaboration-item">
+      Artists
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Designers
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Musicians
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      DJs
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Photographers
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Makers
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Athletes
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Communities
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Organisations
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Cultural Thinkers
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Partners
+    </div>
+
+
+
+
+    <div class="collaboration-item">
+      Creatives
+    </div>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     FINAL CTA
+======================================================= -->
+
+
+<section
+  class="section cta reveal"
+  id="contact"
+>
+
+
+  <div class="eyebrow">
+    GhViƆɔ
+  </div>
+
+
+
+
+  <h2 class="cta-title">
+
+
+    There is more
+    to create.
+
+
+  </h2>
+
+
+
+
+  <div class="text">
+
+
+    <p>
+      GhViƆɔ is already in motion.
+    </p>
+
+
+
+
+    <p>
+      If you are building something meaningful,
+      making something beautiful, questioning
+      something important, creating culture,
+      or looking for people with whom to build —
+      there is room here.
+    </p>
+
+
+  </div>
+
+
+
+
+  <div class="actions">
+
+
+    <a
+      href="mailto:ghvicc254@gmail.com"
+      class="btn primary"
+    >
+      Start a Conversation
+    </a>
+
+
+
+
+    <a
+      href="https://linktr.ee/ghvicc"
+      class="btn secondary"
+      target="_blank"
+      rel="noopener"
+    >
+      Find GhViƆɔ
+    </a>
+
+
+  </div>
+
+
+
+
+  <div class="socials">
+
+
+
+
+    <a
+      class="social"
+      href="https://www.instagram.com/ghvicc_/"
+      target="_blank"
+      rel="noopener"
+    >
+      INSTAGRAM
+    </a>
+
+
+
+
+    <a
+      class="social"
+      href="https://www.pinterest.com/ghvicc/"
+      target="_blank"
+      rel="noopener"
+    >
+      PINTEREST
+    </a>
+
+
+
+
+    <a
+      class="social"
+      href="https://www.facebook.com/"
+      target="_blank"
+      rel="noopener"
+    >
+      FACEBOOK
+    </a>
+
+
+
+
+    <a
+      class="social"
+      href="https://linktr.ee/ghvicc"
+      target="_blank"
+      rel="noopener"
+    >
+      LINKTREE
+    </a>
+
+
+
+
+    <a
+      class="social"
+      href="mailto:ghvicc254@gmail.com"
+    >
+      EMAIL
+    </a>
+
+
+
+
+  </div>
+
+
+</section>
+
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+
+<footer>
+
+
+  <div class="footer-logo">
+    GhViƆɔ
+  </div>
+
+
+
+
+  <div class="footer-sub">
+
+
+    Culture • Art • Sound • Fashion<br>
+    Community • Sport • Environment • Ideas
+
+
+  </div>
+
+
+
+
+  <div class="footer-links">
+
+
+    <a href="#about">
+      About
+    </a>
+
+
+
+
+    <a href="#activity">
+      Activity
+    </a>
+
+
+
+
+    <a href="#world">
+      World
+    </a>
+
+
+
+
+    <a href="#fashion">
+      Fashion
+    </a>
+
+
+
+
+    <a href="#sound">
+      Sound
+    </a>
+
+
+
+
+    <a href="#community">
+      Community
+    </a>
+
+
+
+
+    <a href="#impact">
+      Impact
+    </a>
+
+
+
+
+    <a href="#work">
+      Work
+    </a>
+
+
+
+
+    <a href="#stories">
+      Stories
+    </a>
+
+
+
+
+    <a href="#contact">
+      Contact
+    </a>
+
+
+  </div>
+
+
+
+
+  <div class="copyright">
+
+
+    © <span id="year"></span>
+    GhViƆɔ.
+    All rights reserved.
+
+
+  </div>
+
+
+</footer>
+
+
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+
+<script>
+
+
+
+
+/* =========================================================
+   THEME
+========================================================= */
+
+
+const themeToggle =
+  document.getElementById("themeToggle");
+
+
+
+
+function setTheme(theme){
+
+
+  if(theme === "light"){
+
+
+    document.body.classList.add("light");
+
+
+  }else{
+
+
+    document.body.classList.remove("light");
+
+
+  }
+
+
+
+
+  localStorage.setItem(
+    "ghviccTheme",
+    theme
+  );
+
+
+}
+
+
+
+
+/* Restore saved theme */
+
+
+const savedTheme =
+  localStorage.getItem("ghviccTheme");
+
+
+
+
+if(savedTheme){
+
+
+  setTheme(savedTheme);
+
+
+}
+
+
+
+
+/* Toggle */
+
+
+themeToggle.addEventListener(
+  "click",
+  () => {
+
+
+    const isLight =
+      document.body.classList.contains("light");
+
+
+
+
+    setTheme(
+      isLight ? "dark" : "light"
+    );
+
+
+  }
+);
+
+
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+
+const revealObserver =
+  new IntersectionObserver(
+
+
+    entries => {
+
+
+      entries.forEach(entry => {
+
+
+        if(entry.isIntersecting){
+
+
+          entry.target.classList.add("visible");
+
+
+          revealObserver.unobserve(
+            entry.target
+          );
+
+
+        }
+
+
+      });
+
+
+    },
+
+
+    {
+      threshold:.12
+    }
+
+
+  );
+
+
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(element => {
+
+
+    revealObserver.observe(element);
+
+
+  });
+
+
+
+
+/* =========================================================
+   SMOOTH ANCHOR LINKS
+========================================================= */
+
+
+document
+  .querySelectorAll('a[href^="#"]')
+  .forEach(anchor => {
+
+
+    anchor.addEventListener(
+      "click",
+      function(event){
+
+
+        const id =
+          this.getAttribute("href");
+
+
+
+
+        if(!id || id === "#"){
+
+
+          return;
+
+
+        }
+
+
+
+
+        const target =
+          document.querySelector(id);
+
+
+
+
+        if(target){
+
+
+          event.preventDefault();
+
+
+
+
+          target.scrollIntoView({
+
+
+            behavior:"smooth",
+
+
+            block:"start"
+
+
+          });
+
+
+        }
+
+
+      }
+    );
+
+
+  });
+
+
+
+
+/* =========================================================
+   YEAR
+========================================================= */
+
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+
+
+
+/* =========================================================
+   IMAGE FALLBACK
+========================================================= */
+
+
+document
+  .querySelectorAll("img")
+  .forEach(image => {
+
+
+    image.addEventListener(
+      "error",
+      () => {
+
+
+        image.style.background =
+          "linear-gradient(135deg,#152219,#304b37)";
+
+
+        image.style.minHeight =
+          "250px";
+
+
+      }
+
+
+    );
+
+
+  });
+
+
+
+
+/* =========================================================
+   HERO PARALLAX
+========================================================= */
+
+
+const hero =
+  document.querySelector(".hero");
+
+
+
+
+window.addEventListener(
+  "scroll",
+  () => {
+
+
+    if(
+      window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches
+    ){
+
+
+      return;
+
+
+    }
+
+
+
+
+    const scroll =
+      window.scrollY;
+
+
+
+
+    if(
+      scroll <
+      window.innerHeight
+    ){
+
+
+      hero.style.backgroundPosition =
+        `center ${scroll * .25}px`;
+
+
+    }
+
+
+  },
+  {
+    passive:true
+  }
+);
+
+
+</script>
+
+
+
+
+</body>
